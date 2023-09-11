@@ -1,6 +1,10 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	let charMap = {};
+	if(str.length==0){
+		return("null");
+	}
+	else{
+		let charMap = {};
 	for(let char of str){
 		charMap[char] = (charMap[char]||0)+1;
 	}
@@ -9,6 +13,8 @@ function firstNonRepeatedChar(str) {
 				return str[i];
 			}
 		}
+		
+	}
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
