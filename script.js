@@ -1,7 +1,7 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
 	if(str.length==0){
-		return("null");
+		return(null);
 	}
 	else{
 		let charMap = {};
@@ -13,7 +13,6 @@ function firstNonRepeatedChar(str) {
 				return str[i];
 			}
 		}
-		
 	}
 }
 const input = prompt("Enter a string");
